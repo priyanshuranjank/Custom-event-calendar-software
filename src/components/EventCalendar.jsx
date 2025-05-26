@@ -1,4 +1,3 @@
-// Entry Point - EventCalendar.jsx
 import React, { useState, useEffect, useMemo } from 'react';
 import { Calendar, Clock, Plus, Search, Filter, ChevronLeft, ChevronRight } from 'lucide-react';
 import CalendarDay from './CalendarDay';
@@ -9,7 +8,7 @@ import { formatDate, isSameDay, getDaysInMonth, getFirstDayOfMonth } from '../ut
 import { loadEventsFromStorage, saveEventsToStorage } from '../utils/storageUtils';
 
 const EventCalendar = () => {
-  const [currentDate, setCurrentDate] = useState(new Date(2025, 4, 24));
+  const [currentDate, setCurrentDate] = useState(new Date());
   const [events, setEvents] = useState([]);
   const [showEventForm, setShowEventForm] = useState(false);
   const [editingEvent, setEditingEvent] = useState(null);
@@ -163,7 +162,7 @@ const EventCalendar = () => {
               </div>
               <button
                 onClick={() => {
-                  setSelectedDate(new Date(2025, 4, 24));
+                  setSelectedDate(new Date());
                   setEditingEvent(null);
                   setShowEventForm(true);
                 }}
@@ -218,15 +217,27 @@ const EventCalendar = () => {
 
       {showEventForm && (
         <EventForm
-          event={editingEvent}
-          onSave={handleEventSave}
-          onCancel={() => {
-            setShowEventForm(false);
-            setEditingEvent(null);
-            setSelectedDate(null);
-          }}
-          onDelete={handleEventDelete}
-        />
+  event={
+    editingEvent ||
+    (selectedDate && {
+      date: formatDate(selectedDate),
+      title: '',
+      time: '09:00',
+      description: '',
+      category: 'work',
+      recurrence: 'none',
+      customInterval: 1
+    })
+  }
+  onSave={handleEventSave}
+  onCancel={() => {
+    setShowEventForm(false);
+    setEditingEvent(null);
+    setSelectedDate(null);
+  }}
+  onDelete={handleEventDelete}
+/>
+
       )}
     </div>
   );
