@@ -41,7 +41,8 @@ const EventCalendar = () => {
 
   const year = currentDate.getFullYear();
   const month = currentDate.getMonth();
-  const today = new Date(2025, 4, 24);
+  const today = new Date();
+  today.setHours(0, 0, 0, 0); 
 
   const calendarDays = useMemo(() => {
     const daysInMonth = getDaysInMonth(year, month);

@@ -20,7 +20,7 @@ A modern, interactive event calendar application built with React and Vite. This
 
 ## 🚀 Live Demo
 
-Visit the live application: [Custom Event Calendar](https://your-app-name.vercel.app)
+Visit the live application: [Custom Event Calendar](https://custom-event-calendar-software.vercel.app/)
 
 ## 🛠 Tech Stack
 
