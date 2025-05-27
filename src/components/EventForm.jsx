@@ -16,7 +16,7 @@ const EventForm = ({ event, onSave, onCancel, onDelete }) => {
 
   const handleSubmit = () => {
     if (!formData.title.trim()) {
-      alert('Please enter an event title');
+      alert('Enter an event title');
       return;
     }
     onSave({
@@ -45,7 +45,7 @@ const EventForm = ({ event, onSave, onCancel, onDelete }) => {
             </button>
           </div>
 
-          {/* Form Inputs */}
+                          {/* Form Inputs */}
           <div className="space-y-4">
             <input
               type="text"
@@ -111,7 +111,7 @@ const EventForm = ({ event, onSave, onCancel, onDelete }) => {
               />
             )}
 
-            {/* Buttons */}
+                                  {/* Buttons */}
             <div className="flex gap-3 pt-4">
               <button
                 onClick={handleSubmit}

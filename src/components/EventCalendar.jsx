@@ -104,7 +104,7 @@ const EventCalendar = () => {
   };
 
   const handleEventDelete = (eventId) => {
-    if (window.confirm('Are you sure you want to delete this event?')) {
+    if (window.confirm('Delete this event?')) {
       setEvents(events.filter(event => event.id !== eventId));
     }
     setShowEventForm(false);
@@ -141,7 +141,7 @@ const EventCalendar = () => {
                 <Search className="w-4 h-4 absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
                 <input
                   type="text"
-                  placeholder="Search events..."
+                  placeholder="Search events"
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                   className="pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 w-full sm:w-64"
