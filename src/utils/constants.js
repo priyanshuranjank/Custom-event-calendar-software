@@ -1,9 +1,9 @@
 export const EVENT_CATEGORIES = {
-  work: { label: 'Work', color: '#FFD6D6' },
-  personal: { label: 'Personal', color: '#D6E6FF' },
-  health: { label: 'Health', color: '#D6FFD9' },
-  social: { label: 'Social', color: '#FFF5CC' },
-  other: { label: 'Other', color: '#E0D6FF' },
+  work: { label: 'Work', color: '#42A5F5' },
+  personal: { label: 'Personal', color: '#FF7043' },  
+  health: { label: 'Health', color: '#66BB6A' },
+  social: { label: 'Social', color: '#FFD54F' },
+  other: { label: 'Other', color: '#AB47BC' },
 };
 
 export const RECURRENCE_OPTIONS = [
