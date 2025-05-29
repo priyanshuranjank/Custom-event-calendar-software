@@ -14,7 +14,7 @@ A modern, interactive event calendar application built with React and Vite. This
 
 ### User Experience
 - **Responsive Design** - Works seamlessly on desktop, tablet, and mobile devices
-- **Color-Coded Categories** - 5 event categories with distinct visual indicators
+- **Color-Coded Categories** - 7 event categories with distinct visual indicators
 - **Event Conflict Management** - Handles overlapping events gracefully
 - **Modern UI** - Clean orange/white theme with smooth interactions
 
@@ -94,8 +94,6 @@ The application will be available at `http://localhost:5173`
 - Combine search and filter for precise results
 
 
-```
-
 ## 🤝 Contributing
 
 1. Fork the repository
@@ -110,7 +108,7 @@ Priyanshu Ranjan - [priyanshuranjan@gmail.com](mailto:priyanshuranjan@gmail.com)
 
 Project Link: [https://github.com/priyanshuranjank/Custom-event-calendar-software](https://github.com/priyanshuranjank/Custom-event-calendar-software)
 
-```
+
 ## 🙏 Acknowledgments
 
 - [React](https://reactjs.org/) - The web framework used
