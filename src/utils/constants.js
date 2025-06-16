@@ -1,6 +1,7 @@
 export const EVENT_CATEGORIES = {
   work: { label: 'Work', color: '#42A5F5' },
   personal: { label: 'Personal', color: '#FF7043' },  
+  urgent: { label: 'Urgent', color: '#FF0000' },  
   health: { label: 'Health', color: '#66BB6A' },
   social: { label: 'Social', color: '#FFD54F' },
   academic: { label: 'Academic', color: '#5C6BC0' },
